@@ -1,0 +1,66 @@
+# start of Meshtastic configure yaml
+channel_url: https://meshtastic.org/e/#CiMSEFr9SXlVlyR9T4sLVlA9GqoaC2VzY2FwZS1yb29tOgIIDRIPCAE4A0ADSAFQG2gBwAYB
+config:
+  bluetooth:
+    enabled: true
+    fixedPin: 123456
+    mode: FIXED_PIN
+  device:
+    disableTripleClick: true
+    nodeInfoBroadcastSecs: 10800
+  display:
+    screenOnSecs: 600
+  lora:
+    hopLimit: 3
+    ignoreMqtt: true
+    region: EU_868
+    sx126xRxBoostedGain: true
+    txEnabled: true
+    txPower: 27
+    usePreset: true
+  network:
+    enabledProtocols: 1
+    ntpServer: meshtastic.pool.ntp.org
+  position:
+    broadcastSmartMinimumDistance: 100
+    broadcastSmartMinimumIntervalSecs: 30
+    gpsMode: ENABLED
+    gpsUpdateInterval: 120
+    positionBroadcastSecs: 900
+    positionBroadcastSmartEnabled: true
+    positionFlags: 811
+  power:
+    lsSecs: 300
+    minWakeSecs: 10
+    sdsSecs: 4294967295
+    waitBluetoothSecs: 60
+  security:
+    privateKey: base64:sLlHDwdPGWp0ntwqMQ9e0Gk6nQFFvsaIOVJ+Nkl6x2E=
+    publicKey: base64:e14TPN0MUObxcJhBUI513hjppchrlf9+rehxHuRGngs=
+    serialEnabled: true
+module_config:
+  ambientLighting:
+    blue: 168
+    current: 10
+    green: 69
+    red: 216
+  detectionSensor:
+    detectionTriggerType: LOGIC_HIGH
+    enabled: true
+    minimumBroadcastSecs: 45
+    name: bottone
+  mqtt:
+    address: mqtt.meshtastic.org
+    encryptionEnabled: true
+    password: large4cats
+    root: msh/EU_868
+    username: meshdev
+  serial:
+    baud: BAUD_9600
+    enabled: true
+    mode: PROTO
+    rxd: 44
+    txd: 43
+owner: Escape-Ordigno
+owner_short: "\U0001F4A3"
+
